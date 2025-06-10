@@ -19,7 +19,7 @@ export default function Landing() {
 						{/* <p className="text-neutral-300 text-xs text-center mb-8">
 							<span className="text-blue-400">Full-Stack Web Developer</span> powered by development and innovation, specializing in Next JS, Node JS, Typescript, Javascript, React Js, Rest APIs, Tailwind CSS.
 						</p> */}
-						<Link href="/" className="mt-8 rounded-full px-8 py-2 text-sm hover:brightness-95 active:opacity-95 text-white bg-blue-500 font-satoshi font-medium border-0 shadow-sm">Let's Talk 🤝</Link>
+						<Link href="/" className="mt-8 rounded-full px-8 text-sm btn bg-blue-500">Let's Talk 🤝</Link>
 					</div>
 				</header>
 				<section className="bg-foreground">

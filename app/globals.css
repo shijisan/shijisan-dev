@@ -24,3 +24,9 @@ body {
   color: var(--foreground);
   font-family: "Inter", Arial, Helvetica, sans-serif;
 }
+
+@layer components{
+  .btn{
+    @apply  rounded-sm text-white shadow-sm hover:brightness-95 active:opacity-95 transition-all px-4 py-2 hover:cursor-pointer
+  }
+}
