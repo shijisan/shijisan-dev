@@ -16,9 +16,7 @@ export default function Landing() {
 							<Image className="rounded-full mb-8 border-4 border-background/10" width={200} height={200} src="/profile.avif" alt="" />
 						</div>
 						<h1 className="text-4xl text-background font-satoshi text-center font-medium">Building the future<br />one line at a time.</h1>
-						{/* <p className="text-neutral-300 text-xs text-center mb-8">
-							<span className="text-blue-400">Full-Stack Web Developer</span> powered by development and innovation, specializing in Next JS, Node JS, Typescript, Javascript, React Js, Rest APIs, Tailwind CSS.
-						</p> */}
+
 						<Link href="/" className="mt-8 rounded-full px-8 text-sm btn bg-blue-500">Let's Talk 🤝</Link>
 					</div>
 				</header>
