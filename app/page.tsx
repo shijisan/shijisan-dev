@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import Notes from "@/components/Notes";
 
 export default function Landing() {
 	return (
@@ -38,8 +39,10 @@ export default function Landing() {
 						</div>
 					</div>
 				</section>
-				<section className="bg-foreground min-h-screen">
-
+				<section className="bg-foreground h-screen flex items-center justify-center">
+					<div className="max-w-7xl h-[75vh] bg-background rounded-3xl w-full">
+						<Notes />
+					</div>
 				</section>
 			</main>
 		</>
