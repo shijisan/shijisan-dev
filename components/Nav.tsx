@@ -37,12 +37,12 @@ export default function Nav() {
         </div>
         <div className="rounded-full px-4 py-2 bg-background w-fit">
           <p className="text-foreground text-xs font-medium">
-            <span className="inline-block size-2 rounded-full bg-green-500 animate-pulse me-1"></span> {dashboardData?.status}
+            <span className="inline-block size-2 rounded-full bg-green-500 animate-pulse me-1"></span> {dashboardData?.status || "Loading..."}
           </p>
         </div>
         <div className="rounded-full px-4 py-2 bg-background w-fit">
           <p className="text-foreground text-xs font-medium">
-            <span className="inline text-green-500 animate-pulse me-1">Working at</span>{dashboardData?.work}
+            <span className="inline text-green-500 animate-pulse me-1">Working at</span>{dashboardData?.work || "Loading..."}
           </p>
         </div>
       </div>

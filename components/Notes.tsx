@@ -80,7 +80,7 @@ export default function Notes() {
 
             {expand &&
 
-               <div className="h-screen w-full fixed bg-black/50 top-0 left-0 flex items-center justify-center">
+               <div className="h-screen w-full fixed bg-black/50 top-0 left-0 flex items-center justify-center z-30">
                   <div className="fixed top-[1rem] right-[1rem] text-white gap-4 flex" >
                      <button className="hover:underline hover:cursor-pointer" onClick={() => { setExpand(!expand); handleDelete(); }}>Delete and Close</button>
                      <button className="hover:underline hover:cursor-pointer" onClick={() => { setExpand(!expand); handleSave(); }}>Close and Save</button>

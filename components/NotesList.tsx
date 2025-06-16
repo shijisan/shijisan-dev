@@ -1,8 +1,9 @@
 "use client";
 
-import { DndContext, closestCenter, KeyboardSensor, PointerSensor, useSensor, useSensors,
+import {
+   DndContext, closestCenter, KeyboardSensor, PointerSensor, useSensor, useSensors,
 } from '@dnd-kit/core';
-import { arrayMove, SortableContext, sortableKeyboardCoordinates, rectSortingStrategy} from '@dnd-kit/sortable';
+import { arrayMove, SortableContext, sortableKeyboardCoordinates, rectSortingStrategy } from '@dnd-kit/sortable';
 import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import type { Note } from '@/types/global';
@@ -88,10 +89,15 @@ export default function NotesList({
       >
          <SortableContext items={notes.map((n) => n.key)} strategy={rectSortingStrategy}>
             <ul className="flex flex-wrap gap-4 w-full overflow-y-auto h-full">
-               {notes.map((note) => (
-                  <SortableNote key={note.key} note={note} onNoteClick={onNoteClick} />
-               ))}
+               {notes.length === 0 ? (
+                  <li className="text-gray-400 text-sm italic">Click "+" to create a new note</li>
+               ) : (
+                  notes.map((note) => (
+                     <SortableNote key={note.key} note={note} onNoteClick={onNoteClick} />
+                  ))
+               )}
             </ul>
+
          </SortableContext>
       </DndContext>
    );
