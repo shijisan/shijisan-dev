@@ -25,8 +25,22 @@ body {
   font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
+.ql-editor{
+  height: 16rem!important;
+}
+
+.ql-toolbar{
+  border-radius: 6px 6px 0 0!important;
+  background-color: #fff;
+}
+
+.ql-container{
+  border-radius: 0 0 6px 6px!important;
+  background-color: #fff;
+}
+
 @layer components{
   .btn{
-    @apply  rounded-sm text-white shadow-sm hover:brightness-95 active:opacity-95 transition-all px-4 py-2 hover:cursor-pointer
+    @apply rounded-sm text-white shadow-sm hover:brightness-95 active:opacity-95 transition-all px-4 py-2 hover:cursor-pointer
   }
 }
