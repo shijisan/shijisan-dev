@@ -75,7 +75,7 @@ export default function Notes() {
             </aside>
 
             <main className="w-full h-full p-6">
-               <NotesList notes={notes} setNotes={setNotes} onNoteClick={(note) => { setEditingKey(note.key), setEditorContent(note.content), setExpand(true); }} />
+               <NotesList notes={notes} setNotes={setNotes} onNoteClick={(note) => { setEditingKey(note.key); setEditorContent(note.content); setExpand(true); }} />
             </main>
 
             {expand &&

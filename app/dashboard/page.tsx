@@ -103,7 +103,7 @@ export default function Dashboard() {
 					onChange={(e) => setStatus(e.target.value)}
 					className="p-2 border rounded"
 				>
-					<option value="">-- Select Status --</option>
+					<option value="">{dashboardData?.status || "-- Select Status --"}</option>
 					<option value="Open to work">Open to work</option>
 					<option value="Employed">Employed</option>
 				</select>

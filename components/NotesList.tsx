@@ -6,6 +6,7 @@ import { arrayMove, SortableContext, sortableKeyboardCoordinates, rectSortingStr
 import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import type { Note } from '@/types/global';
+import type { DragEndEvent } from '@dnd-kit/core';
 
 function previewText(html: string, maxLength: number = 100): string {
    const textWithBreaks = html
@@ -69,7 +70,7 @@ export default function NotesList({
    );
 
 
-   const handleDragEnd = (event: any) => {
+   const handleDragEnd = (event: DragEndEvent) => {
       const { active, over } = event;
       if (!over || active.id === over.id) return;
 

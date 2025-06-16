@@ -19,7 +19,7 @@ export default function Landing() {
 						</div>
 						<h1 className="text-4xl text-background font-satoshi text-center font-medium">Building the future<br />one line at a time.</h1>
 
-						<Link href="/" className="mt-8 rounded-full px-8 text-sm btn bg-blue-500">Let's Talk 🤝</Link>
+						<Link href="/" className="mt-8 rounded-full px-8 text-sm btn bg-blue-500">Let&apos;s Talk 🤝</Link>
 					</div>
 				</header>
 				<section className="bg-gradient-to-r from-foreground to-foreground/85">
