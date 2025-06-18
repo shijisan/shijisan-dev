@@ -13,7 +13,7 @@ export default function Landing() {
 					<div className="flex items-center justify-center w-full h-full flex-col max-w-[455px]">
 						<div>
 							<div className="rounded-full w-fit p-2 bg-background text-center relative top-2/5 -right-3/5 -rotate-12">
-								<h1 className="text-xs">Christian James Santos 🧑‍💻</h1>
+								<h1 className="text-xs">Christian James Santos 👨‍💻</h1>
 							</div>
 							<Image className="rounded-full mb-8 border-4 border-background/10" width={200} height={200} src="/profile.avif" alt="" />
 						</div>
