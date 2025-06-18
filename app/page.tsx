@@ -47,25 +47,42 @@ export default function Landing() {
 							<div className="max-w-xl h-[50vh] bg-background rounded-3xl w-full">
 								<Notes />
 							</div>
-							<div className="text-foreground max-w-xl bg-background h-[50vh] rounded-3xl py-8">
+							<div className="text-foreground max-w-xl bg-background h-[50vh] rounded-3xl py-8 relative">
+								<div>
+									<svg className="absolute size-24 -right-0.5 -bottom-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 3 3">
+										<path className="relative" d="M 0 0 L 3 -3 L 3 -1 C 3 -1 3 0 2 0 L 0 0" fill="oklch(72.3% 0.219 149.579)" />
+										<text className="-rotate-45 text-[0.30px] " x="1.40" y="0.50" fill="white" >
+											Personal
+										</text>
+										<text className="text-[0.30px] -rotate-45" x="1.45" y="0.85" fill="white">
+											Projects
+										</text>
+									</svg>
+								</div>
 								<SwiperSection />
 							</div>
 						</div>
 
-						<ul className="grid md:grid-cols-3 w-full max-w-7xl text-foreground gap-8 bg-background rounded-3xl h-[30vh] items-center p-8">
-							<li>
-								<h1>The VA BAR</h1>
-								<p>Web Development Instructor and Freelancer</p>
-							</li>
-							<li>
-								<h1>VAMEPLEASE</h1>
-								<p>System Automation Specialist</p>
-							</li>
-							<li>
-								<h1>Hambi Media</h1>
-								<p>Shopify Replo Developer</p>
-							</li>
-						</ul>
+						<div className="max-w-7xl text-foreground w-full bg-background rounded-3xl items-center p-8 justify-center space-y-4">
+							<h2 className="text-3xl font-satoshi font-medium">Work Experience</h2>
+							<ol className="grid md:grid-rows-2 w-full gap-8 h-full grid-flow-col">
+								<li className="h-full flex justify-center flex-col">
+									<h1 className="font-medium">The VA BAR</h1>
+									<h3 className="text-xs text-blue-500">Web Development Instructor &amp; Freelancer</h3>
+									<p className="text-sm">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.</p>
+								</li>
+								<li className="h-full flex justify-center flex-col">
+									<h1 className="font-medium">VAMEPLEASE</h1>
+									<h3 className="text-xs text-blue-500">System Automation Intern</h3>
+									<p className="text-sm">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.</p>
+								</li>
+								<li className="h-full flex justify-center flex-col">
+									<h1 className="font-medium">Hambi Media</h1>
+									<h3 className="text-xs text-blue-500">Shopify Replo Developer</h3>
+									<p className="text-sm">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.</p>
+								</li>
+							</ol>
+						</div>
 					</div>
 
 				</section>

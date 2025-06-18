@@ -43,4 +43,10 @@ body {
   .btn{
     @apply rounded-sm text-white shadow-sm hover:brightness-95 active:opacity-95 transition-all px-4 py-2 hover:cursor-pointer
   }
+  
+  .triangle {
+    @apply w-0 h-0 border-l-[25px] border-r-[25px] border-b-[50px] border-l-transparent border-r-transparent;
+  }
+
+
 }

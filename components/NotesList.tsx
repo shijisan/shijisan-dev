@@ -43,7 +43,7 @@ function SortableNote({ note, onNoteClick }: { note: Note; onNoteClick: (note: N
          {...attributes}
          {...listeners}
          onClick={() => onNoteClick(note)}
-         className="w-full p-4 bg-foreground/10 rounded shadow active:cursor-grab hover:cursor-pointer"
+         className="w-full p-4 bg-foreground/10 rounded shadow active:cursor-grab hover:cursor-pointer h-fit mb-3"
       >
          {previewText(note.content)}
       </li>
@@ -88,9 +88,9 @@ export default function NotesList({
          onDragEnd={handleDragEnd}
       >
          <SortableContext items={notes.map((n) => n.key)} strategy={rectSortingStrategy}>
-            <ul className="flex flex-wrap gap-4 w-full overflow-y-auto h-full">
-               {notes.length === 0 ? (
-                  <li className="text-gray-400 text-sm italic">Click "+" to create a new note</li>
+            <ul className="w-full overflow-y-auto h-full overflow-x-hidden">
+               {notes.length === 0 ? ( 
+                  <li className="text-gray-400 italic">Click "+" to create a new note</li>
                ) : (
                   notes.map((note) => (
                      <SortableNote key={note.key} note={note} onNoteClick={onNoteClick} />
