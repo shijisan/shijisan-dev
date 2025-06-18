@@ -9,9 +9,9 @@ export default function Landing() {
 	return (
 		<>
 			<main>
-				<header className="rounded-b-[5rem] md:h-[80vh] bg-gradient-to-r from-foreground to-foreground/85 flex items-center justify-center">
-					<div className="flex items-center justify-center w-full h-full flex-col max-w-[455px]">
-						<div>
+				<header className="md:rounded-b-[5rem] rounded-b-4xl h-[80vh] bg-gradient-to-r from-foreground to-foreground/85 flex items-center justify-center">
+					<div className="flex items-center justify-center w-full h-full flex-col md:max-w-[455px]">
+						<div className="md:h-auto h-64">
 							<div className="rounded-full w-fit p-2 bg-background text-center relative top-2/5 -right-3/5 -rotate-12">
 								<h1 className="text-xs">Christian James Santos 👨‍💻</h1>
 							</div>
@@ -22,34 +22,34 @@ export default function Landing() {
 						<Link href="/" className="mt-8 rounded-full px-8 text-sm btn bg-blue-500">Let&apos;s Talk 🤝</Link>
 					</div>
 				</header>
-				<section className="bg-gradient-to-r from-foreground to-foreground/85">
-					<div className="rounded-b-[5rem] bg-background">
+				<section className="bg-gradient-to-r from-foreground to-foreground/85 border-none">
+					<div className="md:rounded-b-[5rem] rounded-b-4xl bg-background">
 
-						<div className="items-center justify-evenly text-foreground/50 text-7xl grid grid-cols-5 justify-items-center py-16 max-w-7xl mx-auto gap-4">
-							<i className="devicon-nextjs-original-wordmark"></i>
-							<i className="devicon-nodejs-plain-wordmark"></i>
-							<i className="devicon-typescript-plain text-4xl"></i>
-							<i className="devicon-javascript-plain text-4xl"></i>
-							<i className="devicon-react-original-wordmark text-5xl"></i>
-							<i className="devicon-postgresql-plain-wordmark text-5xl"></i>
-							<i className="devicon-prisma-original-wordmark"></i>
-							<i className="devicon-python-plain-wordmark text-5xl"></i>
-							<i className="devicon-fastapi-plain-wordmark"></i>
-							<i className="devicon-tensorflow-original-wordmark"></i>
+						<div className="items-center justify-evenly text-foreground/50 text-7xl grid md:grid-cols-5 grid-cols-2 justify-items-center py-16 max-w-7xl mx-auto gap-4">
+							<i className="devicon-nextjs-original-wordmark h-24"></i>
+							<i className="devicon-nodejs-plain-wordmark h-24"></i>
+							<i className="devicon-typescript-plain text-4xl h-24"></i>
+							<i className="devicon-javascript-plain text-4xl h-24"></i>
+							<i className="devicon-react-original-wordmark text-5xl h-24"></i>
+							<i className="devicon-postgresql-plain-wordmark text-5xl h-24"></i>
+							<i className="devicon-prisma-original-wordmark h-24"></i>
+							<i className="devicon-python-plain-wordmark text-5xl h-24"></i>
+							<i className="devicon-fastapi-plain-wordmark h-24"></i>
+							<i className="devicon-tensorflow-original-wordmark h-24"></i>
 
 						</div>
 					</div>
 				</section>
 				<section className="bg-gradient-to-r from-foreground to-foreground/85 min-h-[150vh] flex items-center justify-center flex-col py-[5vh]">
 
-					<div className="max-w-7xl flex flex-col gap-8">
-						<div className="flex w-full items-center justify-between gap-8">
-							<div className="max-w-xl h-[50vh] bg-background rounded-3xl w-full">
+					<div className="md:max-w-7xl max-w-screen flex flex-col gap-8">
+						<div className="flex lg:flex-row flex-col w-full items-center justify-between gap-8">
+							<div className="md:max-w-xl max-w-screen h-[50vh] bg-background rounded-3xl w-full">
 								<Notes />
 							</div>
-							<div className="text-foreground max-w-xl bg-background h-[50vh] rounded-3xl py-8 relative">
+							<div className="text-foreground md:max-w-xl max-w-screen bg-background h-[50vh] rounded-3xl py-8 relative">
 								<div>
-									<svg className="absolute size-24 -right-0.5 -bottom-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 3 3">
+									<svg className="absolute size-24 -right-0.5 -bottom-0.5 z-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 3 3">
 										<path className="relative" d="M 0 0 L 3 -3 L 3 -1 C 3 -1 3 0 2 0 L 0 0" fill="oklch(72.3% 0.219 149.579)" />
 										<text className="-rotate-45 text-[0.30px] " x="1.40" y="0.50" fill="white" >
 											Personal
@@ -63,9 +63,9 @@ export default function Landing() {
 							</div>
 						</div>
 
-						<div className="max-w-7xl text-foreground w-full bg-background rounded-3xl items-center p-8 justify-center space-y-4">
+						<div className="md:max-w-7xl text-foreground w-full bg-background rounded-3xl items-center p-8 justify-center space-y-4">
 							<h2 className="text-3xl font-satoshi font-medium">Work Experience</h2>
-							<ol className="grid md:grid-rows-2 w-full gap-8 h-full grid-flow-col">
+							<ol className="grid md:grid-rows-2 grid-rows-3 w-full gap-8 h-full grid-flow-col">
 								<li className="h-full flex justify-center flex-col">
 									<h1 className="font-medium">The VA BAR</h1>
 									<h3 className="text-xs text-blue-500">Web Development Instructor &amp; Freelancer</h3>

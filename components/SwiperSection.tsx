@@ -21,7 +21,7 @@ export default function SwiperSection() {
         loop={true}
       >
         <SwiperSlide>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center px-4">
             <div className='flex flex-col space-y-4'>
               <Image src="https://placehold.co/426x240/webp" height={240} width={426} alt="test" />
               <h1>Title 1</h1>
@@ -35,7 +35,7 @@ export default function SwiperSection() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center px-4">
             <div className='flex flex-col space-y-4'>
               <Image src="https://placehold.co/426x240/webp" height={240} width={426} alt="test" />
               <h1>Title 2</h1>
@@ -49,7 +49,7 @@ export default function SwiperSection() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center px-4">
             <div className='flex flex-col space-y-4'>
               <Image src="https://placehold.co/426x240/webp" height={240} width={426} alt="test" />
               <h1>Title 3</h1>
@@ -63,7 +63,7 @@ export default function SwiperSection() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center px-4">
             <div className='flex flex-col space-y-4'>
               <Image src="https://placehold.co/426x240/webp" height={240} width={426} alt="test" />
               <h1>Title 4</h1>
