@@ -90,7 +90,7 @@ export default function NotesList({
          <SortableContext items={notes.map((n) => n.key)} strategy={rectSortingStrategy}>
             <ul className="w-full overflow-y-auto h-full overflow-x-hidden">
                {notes.length === 0 ? ( 
-                  <li className="text-gray-400 italic">Click "+" to create a new note</li>
+                  <li className="text-gray-400 italic">Click &quot;+&quot; to create a new note</li>
                ) : (
                   notes.map((note) => (
                      <SortableNote key={note.key} note={note} onNoteClick={onNoteClick} />
