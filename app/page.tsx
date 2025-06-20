@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Notes from "@/components/Notes";
 import SwiperSection from "@/components/SwiperSection";
+import ContactPage from "@/components/Contact";
 
 export default function Landing() {
 	return (
@@ -22,10 +23,10 @@ export default function Landing() {
 						<Link href="/" className="mt-8 rounded-full px-8 text-sm btn bg-blue-500">Let&apos;s Talk 🤝</Link>
 					</div>
 				</header>
-				<section className="bg-gradient-to-r from-foreground to-foreground/85 border-none">
+				<section className="bg-gradient-to-r from-foreground to-foreground/85 border-no-ne">
 					<div className="md:rounded-b-[5rem] rounded-b-4xl bg-background">
 
-						<div className="items-center justify-evenly text-foreground/50 text-7xl grid md:grid-cols-5 grid-cols-2 justify-items-center py-16 max-w-7xl mx-auto gap-4">
+						<div className="items-center justify-evenly text-foreground/50 text-7xl grid md:grid-cols-5 grid-cols-3 justify-items-center py-16 max-w-7xl mx-auto gap-4">
 							<i className="devicon-nextjs-original-wordmark h-24"></i>
 							<i className="devicon-nodejs-plain-wordmark h-24"></i>
 							<i className="devicon-typescript-plain text-4xl h-24"></i>
@@ -44,10 +45,10 @@ export default function Landing() {
 
 					<div className="md:max-w-7xl max-w-screen flex flex-col gap-8">
 						<div className="flex lg:flex-row flex-col w-full items-center justify-between gap-8">
-							<div className="md:max-w-xl max-w-screen h-[50vh] bg-background rounded-3xl w-full">
+							<div className="md:max-w-xl max-w-screen h-[50vh] bg-background rounded-3xl md:w-full w-[99%]">
 								<Notes />
 							</div>
-							<div className="text-foreground md:max-w-xl max-w-screen bg-background h-[50vh] rounded-3xl py-8 relative">
+							<div className="text-foreground md:max-w-xl max-w-screen bg-background h-[50vh] rounded-3xl py-8 relative md:w-full w-[99%]">
 								<div>
 									<svg className="absolute size-24 -right-0.5 -bottom-0.5 z-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 3 3">
 										<path className="relative" d="M 0 0 L 3 -3 L 3 -1 C 3 -1 3 0 2 0 L 0 0" fill="oklch(72.3% 0.219 149.579)" />
@@ -65,7 +66,7 @@ export default function Landing() {
 
 						<div className="md:max-w-7xl text-foreground w-full bg-background rounded-3xl items-center p-8 justify-center space-y-4">
 							<h2 className="text-3xl font-satoshi font-medium">Work Experience</h2>
-							<ol className="grid md:grid-rows-2 grid-rows-3 w-full gap-8 h-full grid-flow-col">
+							<ol className="grid md:grid-rows-2 grid-rows-3 w-full md:gap-16 gap-8 h-full grid-flow-col">
 								<li className="h-full flex justify-center flex-col">
 									<h1 className="font-medium">The VA BAR</h1>
 									<h3 className="text-xs text-blue-500">Web Development Instructor &amp; Freelancer</h3>
@@ -88,8 +89,8 @@ export default function Landing() {
 				</section>
 
 				<footer className="h-[50vh] bg-gradient-to-r from-foreground to-foreground/85 ">
-					<div className="rounded-t-[5rem] bg-background w-full h-full flex items-center justify-center">
-						<h1>Contact Section, finish this bruh</h1>
+					<div className="md:rounded-t-[5rem] rounded-4xl bg-background w-full h-full flex items-center justify-center">
+						<ContactPage />
 					</div>
 				</footer>
 
