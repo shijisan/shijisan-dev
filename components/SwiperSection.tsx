@@ -5,6 +5,7 @@ import { Navigation, A11y } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function SwiperSection() {
   return (
@@ -22,39 +23,39 @@ export default function SwiperSection() {
       >
         <SwiperSlide>
           <div className="flex items-center justify-center px-4">
-            <div className='flex flex-col space-y-4'>
-              <Image src="/chat-tfu-sc.webp" height={240} width={426} alt="test" />
-              <h1>Title 1</h1>
-              <p>Body</p>
+            <div className='flex flex-col space-y-4 max-w-sm'>
+              <Image className='h-[240px]' src="/chat-tfu-sc.webp" height={240} width={426} alt="test" />
+              <h1>Chat-TFU</h1>
+              <p>An End-to-End Encryptied Messaging Web Application with Serverless Peer-to-Peer Video Call.</p>
               <div className="flex gap-4">
-                <button className='btn border-2 border-foreground text-foreground rounded-full bg-white'>Github</button>
-                <button className='btn bg-foreground rounded-full'>Live Link</button>
+                <Link href="https://github.com/shijisan/chat-tfu" className='btn border-2 border-foreground text-foreground rounded-full bg-white'>Github</Link>
+                <Link href="https://chat-tfu.vercel.app" className='btn bg-foreground rounded-full'>Live Link</Link>
               </div>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex items-center justify-center px-4">
-            <div className='flex flex-col space-y-4'>
-              <Image src="https://placehold.co/426x240/webp" height={240} width={426} alt="test" />
-              <h1>Title 1</h1>
-              <p>Body</p>
+            <div className='flex flex-col space-y-4 max-w-sm'>
+              <Image className='h-[240px]' src="/phx-write-sc.webp" height={240} width={426} alt="test" />
+              <h1>PHX-Write</h1>
+              <p>A privacy-focused, offline-first notes app with E2E encryption, seamless local-to-cloud migration, and a clean minimalist UI.</p>
               <div className="flex gap-4">
-                <button className='btn border-2 border-foreground text-foreground rounded-full bg-white'>Github</button>
-                <button className='btn bg-foreground rounded-full'>Live Link</button>
+                <Link href="https://github.com/shijisan/PHX-Write" className='btn border-2 border-foreground text-foreground rounded-full bg-white'>Github</Link>
+                <Link href="https://phx-write.vercel.app" className='btn bg-foreground rounded-full'>Live Link</Link>
               </div>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex items-center justify-center px-4">
-            <div className='flex flex-col space-y-4'>
-              <Image src="https://placehold.co/426x240/webp" height={240} width={426} alt="test" />
-              <h1>Title 1</h1>
-              <p>Body</p>
+            <div className='flex flex-col space-y-4 max-w-sm'>
+              <Image className='h-[240px]' src="/replo-plug-sc.webp" height={240} width={426} alt="test" />
+              <h1>Replo Plug</h1>
+              <p>Documentation site with admin panel and documentation/article search.</p>
               <div className="flex gap-4">
-                <button className='btn border-2 border-foreground text-foreground rounded-full bg-white'>Github</button>
-                <button className='btn bg-foreground rounded-full'>Live Link</button>
+                <Link href="https://github.com/shijisan/replo-plug" className='btn border-2 border-foreground text-foreground rounded-full bg-white'>Github</Link>
+                <Link href="https://replo-plug.vercel.app" className='btn bg-foreground rounded-full'>Live Link</Link>
               </div>
             </div>
           </div>
