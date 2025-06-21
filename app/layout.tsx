@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { ToastContainer } from "react-toastify";
 
 import Nav from "@/components/Nav";
 
@@ -30,6 +31,7 @@ export default function RootLayout({
 				className={`${inter.className} antialiased`}
 			>
 				<Nav />
+				<ToastContainer />
 				{children}
 			</body>
 		</html>

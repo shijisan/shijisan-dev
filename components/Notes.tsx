@@ -69,8 +69,8 @@ export default function Notes() {
          <div className="flex h-full w-full relative">
 
             <div>
-               <svg className="absolute size-24 -right-0.5 -bottom-0.5 z-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 3 3">
-                  <path className="relative" d="M 0 0 L 3 -3 L 3 -1 C 3 -1 3 0 2 0 L 0 0" fill="oklch(72.3% 0.219 149.579)" />
+               <svg className="absolute size-24 md:-right-1 -right-0.5 md:-bottom-1 -bottom-0.5 z-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 3 3">
+                  <path className="relative" d="M 0 0 L 3 -3 L 3 -1 C 3 -1 3 0 2 0 L 0 0" fill="#212842" />
                   <text className="-rotate-45 text-[0.30px] "x="1.35" y="0.50" fill="white" >
                      Interactive
                   </text>
@@ -82,7 +82,7 @@ export default function Notes() {
 
 
             <aside className="w-16 flex flex-col items-center py-6 border-e-foreground/50 border-e h-full space-y-8">
-               <button className="bg-foreground text-background rounded-full size-10 btn p-0 text-2xl/tight" onClick={() => setExpand(!expand)}>
+               <button className="bg-foreground text-background rounded-full size-10 btn p-0 text-2xl/tight text-white" onClick={() => setExpand(!expand)}>
                   +
                </button>
             </aside>

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Notes from "@/components/Notes";
 import SwiperSection from "@/components/SwiperSection";
-import ContactPage from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function Landing() {
 	return (
@@ -20,7 +20,7 @@ export default function Landing() {
 						</div>
 						<h1 className="text-4xl text-background font-satoshi text-center font-medium">Building the future<br />one line at a time.</h1>
 
-						<Link href="/" className="mt-8 rounded-full px-8 text-sm btn bg-blue-500">Let&apos;s Talk 🤝</Link>
+						<Link href="/" className="mt-8 py-3	 rounded-full px-8 text-sm btn bg-background text-foreground border-2 border-foreground">Let&apos;s Talk 🤝</Link>
 					</div>
 				</header>
 				<section className="bg-gradient-to-r from-foreground to-foreground/85 border-no-ne">
@@ -41,17 +41,17 @@ export default function Landing() {
 						</div>
 					</div>
 				</section>
-				<section className="bg-gradient-to-r from-foreground to-foreground/85 min-h-[150vh] flex items-center justify-center flex-col py-[5vh]">
+				<section className="bg-gradient-to-r from-foreground to-foreground/85 min-h-[150vh] flex items-center justify-center flex-col md:py-8 py-16">
 
-					<div className="md:max-w-7xl max-w-screen flex flex-col gap-8">
-						<div className="flex lg:flex-row flex-col w-full items-center justify-between gap-8">
-							<div className="md:max-w-xl max-w-screen h-[50vh] bg-background rounded-3xl md:w-full w-[99%]">
+					<div className="md:max-w-7xl max-w-screen flex flex-col md:gap-8 gap-16">
+						<div className="flex lg:flex-row flex-col w-full items-center justify-between md:gap-8 gap-16">
+							<div className="max-w-screen h-[50vh] bg-background rounded-3xl md:w-full w-[99%]">
 								<Notes />
 							</div>
-							<div className="text-foreground md:max-w-xl max-w-screen bg-background h-[50vh] rounded-3xl py-8 relative md:w-full w-[99%]">
+							<div className="text-foreground md:max-w-xl max-w-screen bg-background h-[50vh] rounded-3xl flex justify-center items-center relative md:w-full w-[99%]">
 								<div>
-									<svg className="absolute size-24 -right-0.5 -bottom-0.5 z-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 3 3">
-										<path className="relative" d="M 0 0 L 3 -3 L 3 -1 C 3 -1 3 0 2 0 L 0 0" fill="oklch(72.3% 0.219 149.579)" />
+									<svg className="absolute size-24 md:-right-1 -right-0.5 md:-bottom-1 -bottom-0.5 z-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 3 3">
+										<path className="relative" d="M 0 0 L 3 -3 L 3 -1 C 3 -1 3 0 2 0 L 0 0" fill="#212842" />
 										<text className="-rotate-45 text-[0.30px] " x="1.40" y="0.50" fill="white" >
 											Personal
 										</text>
@@ -64,23 +64,23 @@ export default function Landing() {
 							</div>
 						</div>
 
-						<div className="md:max-w-7xl text-foreground w-full bg-background rounded-3xl items-center p-8 justify-center space-y-4">
+						<div className="md:max-w-7xl text-foreground w-full bg-background rounded-3xl items-center p-8 justify-center space-y-6">
 							<h2 className="text-3xl font-satoshi font-medium">Work Experience</h2>
-							<ol className="grid md:grid-rows-2 grid-rows-3 w-full md:gap-16 gap-8 h-full grid-flow-col">
-								<li className="h-full flex justify-center flex-col">
-									<h1 className="font-medium">The VA BAR</h1>
-									<h3 className="text-xs text-blue-500">Web Development Instructor &amp; Freelancer</h3>
-									<p className="text-sm">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.</p>
+							<ol className="grid md:grid-rows-2 grid-rows-3 w-full gap-8 h-full grid-flow-col text-black">
+								<li className="h-full flex justify-center flex-col border-s-4 border-foreground/50 ps-3 py-2">
+									<h1 className="font-semibold text-green-500">The VA BAR</h1>
+									<h3 className="text-xs text-neutral-500">Web Development Instructor &amp; Freelancer</h3>
+									<p className="text-sm mt-1 text-neutral-800">&rsaquo; I have taught two batches of students at The VA BAR, focusing on Front-End Web Development for beginners. As well have done freelance sites for them.</p>
 								</li>
-								<li className="h-full flex justify-center flex-col">
-									<h1 className="font-medium">VAMEPLEASE</h1>
-									<h3 className="text-xs text-blue-500">System Automation Intern</h3>
-									<p className="text-sm">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.</p>
+								<li className="h-full flex justify-center flex-col border-s-4 border-foreground/50 ps-3 py-2">
+									<h1 className="font-semibold text-green-500">VAMEPLEASE</h1>
+									<h3 className="text-xs text-neutral-500">System Automation Intern</h3>
+									<p className="text-sm mt-1 text-neutral-800">&rsaquo; As an intern, I exposed to building a software-as-a-service modelled project which was an business management hub.</p>
 								</li>
-								<li className="h-full flex justify-center flex-col">
-									<h1 className="font-medium">Hambi Media</h1>
-									<h3 className="text-xs text-blue-500">Shopify Replo Developer</h3>
-									<p className="text-sm">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.</p>
+								<li className="h-full flex justify-center flex-col border-s-4 border-foreground/50 ps-3 py-2">
+									<h1 className="font-semibold text-green-500">Hambi Media</h1>
+									<h3 className="text-xs text-neutral-500">Landing Page Developer</h3>
+									<p className="text-sm mt-1 text-neutral-800">&rsaquo; I was assigned to build Shopify landing pages by following a design and utilizing Replo to create them.</p>
 								</li>
 							</ol>
 						</div>
@@ -88,9 +88,9 @@ export default function Landing() {
 
 				</section>
 
-				<footer className="h-[50vh] bg-gradient-to-r from-foreground to-foreground/85 ">
-					<div className="md:rounded-t-[5rem] rounded-4xl bg-background w-full h-full flex items-center justify-center">
-						<ContactPage />
+				<footer className="bg-gradient-to-r from-foreground to-foreground/85 ">
+					<div className="md:rounded-t-[5rem] rounded-t-4xl bg-background w-full h-full justify-center flex pt-16">
+						<Footer />
 					</div>
 				</footer>
 

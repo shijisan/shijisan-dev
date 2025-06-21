@@ -36,10 +36,10 @@ export default function Nav() {
 
       <div className="md:hidden max-w-screen w-full flex justify-center">
         <div className="rounded-full px-4 py-2 bg-background w-fit flex gap-4">
-          <p className="text-foreground text-xs font-medium">
+          <p className="text-black text-xs font-medium">
             <span className="inline-block size-2 rounded-full bg-green-500 animate-pulse me-1"></span> {dashboardData?.status || "Loading..."}
           </p>
-          <p className="text-foreground text-xs font-medium">
+          <p className="text-black text-xs font-medium">
             <span className="inline text-green-500 animate-pulse me-1">Working at</span>{dashboardData?.work || "Loading..."}
           </p>
         </div>

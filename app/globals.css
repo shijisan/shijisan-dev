@@ -17,6 +17,8 @@
   --color-foreground: var(--foreground);
   --font-inter: var(--inter);
   --font-satoshi: var(--satoshi);
+    --breakpoint-md: 48.03rem;
+
 }
 
 body {
