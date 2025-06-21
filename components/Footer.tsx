@@ -4,7 +4,6 @@ import { useState, ChangeEvent, FormEvent, useEffect } from "react";
 import { FaArrowUp, FaEnvelope, FaHandshakeSimple } from "react-icons/fa6";
 import { toast } from "react-toastify";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { DashboardData } from "@/types/dashboardData";
 
 
