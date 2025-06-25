@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import Notes from "@/components/Notes";
 import SwiperSection from "@/components/SwiperSection";
 import Footer from "@/components/Footer";
@@ -10,19 +9,25 @@ export default function Landing() {
 	return (
 		<>
 			<main>
+
+
+
 				<header className="md:rounded-b-[5rem] rounded-b-4xl h-[80vh] bg-gradient-to-r from-foreground to-foreground/85 flex items-center justify-center">
 					<div className="flex items-center justify-center w-full h-full flex-col md:max-w-[455px]">
 						<div className="md:h-auto h-64">
 							<div className="rounded-full w-fit p-2 bg-background text-center relative top-2/5 -right-3/5 -rotate-12">
-								<h1 className="text-xs">Christian James Santos 👨‍💻</h1>
+								<h1 className="text-xs">Self-taught Web Dev 👨‍💻</h1>
 							</div>
 							<Image className="rounded-full mb-8 border-4 border-background/10" width={200} height={200} src="/profile.avif" alt="" />
 						</div>
 						<h1 className="text-4xl text-background font-satoshi text-center font-medium">Building the future<br />one line at a time.</h1>
 
-						<Link href="/" className="mt-8 py-3	 rounded-full px-8 text-sm btn bg-background text-foreground border-2 border-foreground">Let&apos;s Talk 🤝</Link>
+						<button onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })} className="mt-8 py-3	 rounded-full px-8 text-sm btn bg-background text-foreground border-2 border-foreground">Let&apos;s Talk 🤝</button>
 					</div>
 				</header>
+
+
+
 				<section className="bg-gradient-to-r from-foreground to-foreground/85 border-no-ne">
 					<div className="md:rounded-b-[5rem] rounded-b-4xl bg-background">
 
@@ -41,6 +46,9 @@ export default function Landing() {
 						</div>
 					</div>
 				</section>
+
+
+
 				<section className="bg-gradient-to-r from-foreground to-foreground/85 min-h-[150vh] flex items-center justify-center flex-col md:py-8 py-16">
 
 					<div className="md:max-w-7xl max-w-screen flex flex-col md:gap-8 gap-16">
@@ -87,6 +95,8 @@ export default function Landing() {
 					</div>
 
 				</section>
+
+
 
 				<footer className="bg-gradient-to-r from-foreground to-foreground/85 ">
 					<div className="md:rounded-t-[5rem] rounded-t-4xl bg-background w-full h-full justify-center flex pt-16">

@@ -24,9 +24,35 @@ export default function SwiperSection() {
         <SwiperSlide>
           <div className="flex items-center justify-center px-4">
             <div className='flex flex-col space-y-4 max-w-sm'>
-              <Image className='h-[240px]' src="/chat-tfu-sc.webp" height={240} width={426} alt="test" />
-              <h1>Chat-TFU</h1>
-              <p>An End-to-End Encryptied Messaging Web Application with Serverless Peer-to-Peer Video Call.</p>
+              <div className='h-[240px] rounded-sm'>
+                <iframe
+                  className="w-full aspect-video rounded-sm bg-black"
+                  src="https://www.youtube.com/embed/zUYugyH97Rg?rel=0&controls=0&modestbranding=1&autoplay=0&loop=1&playlist=zUYugyH97Rg&vq=hd1080p"
+                  title="Free Soul HydraCreatine"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  height="240px"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div>
+                <h1>Free Soul HydraCreatine</h1>
+                <p className='mt-2'>A Landing Page built with Replo and Shopify Integration for a UK-based health supplement company.</p>
+              </div>
+              <div className="flex gap-4">
+                <Link href="https://freesoul.com/pages/train-smarter-with-hydracreatine" className='btn bg-foreground rounded-full'>Live Link</Link>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="flex items-center justify-center px-4">
+            <div className='flex flex-col space-y-4 max-w-sm'>
+              <Image className='h-[240px] rounded-sm' src="/chat-tfu-sc.webp" height={240} width={426} alt="test" />
+              <div>
+                <h1>Chat-TFU</h1>
+                <p className='mt-2'>An End-to-End Encryptied Messaging Web Application with Serverless Peer-to-Peer Video Call.</p>
+              </div>
               <div className="flex gap-4">
                 <Link href="https://github.com/shijisan/chat-tfu" className='btn border-2 border-foreground text-foreground rounded-full bg-white'>Github</Link>
                 <Link href="https://chat-tfu.vercel.app" className='btn bg-foreground rounded-full'>Live Link</Link>
@@ -37,9 +63,11 @@ export default function SwiperSection() {
         <SwiperSlide>
           <div className="flex items-center justify-center px-4">
             <div className='flex flex-col space-y-4 max-w-sm'>
-              <Image className='h-[240px]' src="/phx-write-sc.webp" height={240} width={426} alt="test" />
-              <h1>PHX-Write</h1>
-              <p>A privacy-focused, offline-first notes app with E2E encryption, seamless local-to-cloud migration, and a clean minimalist UI.</p>
+              <Image className='h-[240px] rounded-sm' src="/phx-write-sc.webp" height={240} width={426} alt="test" />
+              <div>
+                <h1>PHX-Write</h1>
+                <p className='mt-2'>A privacy-focused, offline-first notes app with E2E encryption, seamless local-to-cloud migration, and a clean minimalist UI.</p>
+              </div>
               <div className="flex gap-4">
                 <Link href="https://github.com/shijisan/PHX-Write" className='btn border-2 border-foreground text-foreground rounded-full bg-white'>Github</Link>
                 <Link href="https://phx-write.vercel.app" className='btn bg-foreground rounded-full'>Live Link</Link>
@@ -50,9 +78,11 @@ export default function SwiperSection() {
         <SwiperSlide>
           <div className="flex items-center justify-center px-4">
             <div className='flex flex-col space-y-4 max-w-sm'>
-              <Image className='h-[240px]' src="/replo-plug-sc.webp" height={240} width={426} alt="test" />
-              <h1>Replo Plug</h1>
-              <p>Documentation site with admin panel and documentation/article search.</p>
+              <Image className='h-[240px] rounded-sm' src="/replo-plug-sc.webp" height={240} width={426} alt="test" />
+              <div>
+                <h1>Replo Plug</h1>
+                <p className='mt-2'>Documentation site with admin panel and documentation/article search.</p>
+              </div>
               <div className="flex gap-4">
                 <Link href="https://github.com/shijisan/replo-plug" className='btn border-2 border-foreground text-foreground rounded-full bg-white'>Github</Link>
                 <Link href="https://replo-plug.vercel.app" className='btn bg-foreground rounded-full'>Live Link</Link>
@@ -60,9 +90,6 @@ export default function SwiperSection() {
             </div>
           </div>
         </SwiperSlide>
-
-
-
       </Swiper>
     </>
   )
