@@ -48,7 +48,15 @@ export default function SwiperSection() {
         <SwiperSlide>
           <div className="flex items-center justify-center px-4">
             <div className='flex flex-col space-y-4 max-w-sm'>
-              <Image className='h-[240px] rounded-sm' src="/chat-tfu-sc.webp" height={240} width={426} alt="test" />
+              <iframe
+                className="w-full aspect-video rounded-sm bg-black"
+                src="https://www.youtube.com/embed/TlVkysaG7GE?si=4lP1eZXAWOpWiH_A?rel=0&controls=0&modestbranding=1&autoplay=0&loop=1&vq=hd1080p"
+                title="Free Soul HydraCreatine"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                height="240px"
+                allowFullScreen
+              ></iframe>
               <div>
                 <h1>Chat-TFU</h1>
                 <p className='mt-2'>An End-to-End Encryptied Messaging Web Application with Serverless Peer-to-Peer Video Call.</p>
