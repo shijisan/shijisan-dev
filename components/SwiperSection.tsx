@@ -27,6 +27,30 @@ export default function SwiperSection() {
               <div className='h-[240px] rounded-sm'>
                 <iframe
                   className="w-full aspect-video rounded-sm bg-black"
+                  src="https://www.youtube.com/embed/B_lYfQd57vQ?si=B5z7MY6hjYMkstMk?rel=0&controls=0&modestbranding=1&autoplay=0&loop=1"
+                  title="Sum-AI-Rise"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  height="240px"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div>
+                <h1>Sum-AI-Rise</h1>
+                <p className='mt-2'>An AI Powered document summarization tool that accepts PDF, DOCX, and PPTX. Open source and serverless!</p>
+              </div>
+              <div className="flex gap-4">
+                <Link href="https://freesoul.com/pages/train-smarter-with-hydracreatine" className='btn bg-foreground rounded-full'>Live Link</Link>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="flex items-center justify-center px-4">
+            <div className='flex flex-col space-y-4 max-w-sm'>
+              <div className='h-[240px] rounded-sm'>
+                <iframe
+                  className="w-full aspect-video rounded-sm bg-black"
                   src="https://www.youtube.com/embed/zUYugyH97Rg?rel=0&controls=0&modestbranding=1&autoplay=0&loop=1&playlist=zUYugyH97Rg&vq=hd1080p"
                   title="Free Soul HydraCreatine"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -51,7 +75,7 @@ export default function SwiperSection() {
               <iframe
                 className="w-full aspect-video rounded-sm bg-black"
                 src="https://www.youtube.com/embed/TlVkysaG7GE?si=4lP1eZXAWOpWiH_A?rel=0&controls=0&modestbranding=1&autoplay=0&loop=1&vq=hd1080p"
-                title="Free Soul HydraCreatine"
+                title="Chat-TFU"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
                 height="240px"
