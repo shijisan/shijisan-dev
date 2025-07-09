@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, A11y } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import Image from 'next/image';
 import Link from 'next/link';
 
 export default function SwiperSection() {
