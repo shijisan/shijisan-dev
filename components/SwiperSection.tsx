@@ -95,29 +95,22 @@ export default function SwiperSection() {
         <SwiperSlide>
           <div className="flex items-center justify-center px-4">
             <div className='flex flex-col space-y-4 max-w-sm'>
-              <Image className='h-[240px] rounded-sm' src="/phx-write-sc.webp" height={240} width={426} alt="test" />
+              <iframe
+                className="w-full aspect-video rounded-sm bg-black"
+                src="https://youtube.com/embed/igL7F0MsUeA?si=T7li4hJQI5m2BnwM?rel=0&controls=0&modestbranding=1&autoplay=0&loop=1&vq=hd1080p"
+                title="Stock Knowledge"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                height="240px"
+                allowFullScreen
+              ></iframe>
               <div>
-                <h1>PHX-Write</h1>
-                <p className='mt-2'>A privacy-focused, offline-first notes app with E2E encryption, seamless local-to-cloud migration, and a clean minimalist UI.</p>
+                <h1>Stock Knowledge</h1>
+                <p className='mt-2'>A simple inventory management mobile app made with React Native &lpar;Expo&rpar; and NativeWind</p>
               </div>
               <div className="flex gap-4">
-                <Link href="https://github.com/shijisan/PHX-Write" className='btn border-2 border-foreground text-foreground rounded-full bg-white'>Github</Link>
-                <Link href="https://phx-write.vercel.app" className='btn bg-foreground rounded-full'>Live Link</Link>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="flex items-center justify-center px-4">
-            <div className='flex flex-col space-y-4 max-w-sm'>
-              <Image className='h-[240px] rounded-sm' src="/replo-plug-sc.webp" height={240} width={426} alt="test" />
-              <div>
-                <h1>Replo Plug</h1>
-                <p className='mt-2'>Documentation site with admin panel and documentation/article search.</p>
-              </div>
-              <div className="flex gap-4">
-                <Link href="https://github.com/shijisan/replo-plug" className='btn border-2 border-foreground text-foreground rounded-full bg-white'>Github</Link>
-                <Link href="https://replo-plug.vercel.app" className='btn bg-foreground rounded-full'>Live Link</Link>
+                <Link href="https://github.com/shijisan/stock-knowledge" className='btn border-2 border-foreground text-foreground rounded-full bg-white'>Github</Link>
+                <Link href="https://expo.dev/accounts/shijisan/projects/stock-knowledge/builds/014226d7-f045-4fac-9bf4-ea22bb0680da" className='btn bg-foreground rounded-full'>Download Link</Link>
               </div>
             </div>
           </div>

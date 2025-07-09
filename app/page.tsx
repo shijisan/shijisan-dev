@@ -56,7 +56,7 @@ export default function Landing() {
 							<div className="max-w-screen h-[50vh] bg-background rounded-3xl md:w-full w-[99%]">
 								<Notes />
 							</div>
-							<div className="text-foreground md:max-w-xl max-w-screen bg-background h-[50vh] rounded-3xl flex justify-center items-center relative md:w-full w-[99%]">
+							<div className="text-foreground md:max-w-xl max-w-screen bg-background md:h-[50vh] h-[60vh] rounded-3xl flex justify-center items-center relative md:w-full w-[99%]">
 								<div>
 									<svg className="absolute size-24 md:-right-1 -right-0.5 md:-bottom-1 -bottom-0.5 z-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 3 3">
 										<path className="relative" d="M 0 0 L 3 -3 L 3 -1 C 3 -1 3 0 2 0 L 0 0" fill="#212842" />
