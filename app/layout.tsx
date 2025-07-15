@@ -23,7 +23,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<head>
-				<meta name="google-site-verification" content="FMMTfhdKmZr7yBKlspeXnGJL0jvyh5_FB4BiNcANN3Y" />
+				<meta name="google-site-verification" content="5zkBbI09upRRtyvb-cP320Bdj5O56BwjfmiUWLmX0nE" />
 				<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
 			</head>
