@@ -11,8 +11,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-	title: "Christian James Santos",
-	description: "Web Developer",
+	title: "Christian James Santos Portfolio",
+	description: "Web Developer, Node JS, Next JS, Typescript, Tailwind CSS, etc... | shijisan | shijisan-dev",
 };
 
 export default function RootLayout({
@@ -23,7 +23,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<head>
-                                <meta name="google-site-verification" content="FMMTfhdKmZr7yBKlspeXnGJL0jvyh5_FB4BiNcANN3Y" />
+				<meta name="google-site-verification" content="FMMTfhdKmZr7yBKlspeXnGJL0jvyh5_FB4BiNcANN3Y" />
 				<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
 			</head>
