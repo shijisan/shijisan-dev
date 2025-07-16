@@ -12,7 +12,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
 	title: "Christian James Santos Portfolio",
-	description: "Web Developer, Node JS, Next JS, Typescript, Tailwind CSS, etc... | shijisan | shijisan-dev",
+	description: "Shijisan — Web Developer | Expert in Next.js, React, Tailwind CSS, and PostgreSQL. Self-taught and focused on building scalable full-stack apps with AI + security in mind.",
 };
 
 export default function RootLayout({

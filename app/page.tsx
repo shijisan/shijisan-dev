@@ -10,8 +10,6 @@ export default function Landing() {
 		<>
 			<main>
 
-
-
 				<header className="md:rounded-b-[5rem] rounded-b-4xl h-[80vh] bg-gradient-to-r from-foreground to-foreground/85 flex items-center justify-center">
 					<div className="flex items-center justify-center w-full h-full flex-col md:max-w-[455px]">
 						<div className="md:h-auto h-64">
