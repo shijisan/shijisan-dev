@@ -105,7 +105,7 @@ export default function SwiperSection() {
               ></iframe>
               <div>
                 <h1>Stock Knowledge</h1>
-                <p className='mt-2'>A simple inventory management mobile app made with React Native &lpar;Expo&rpar; and NativeWind</p>
+                <p className='mt-2'>A simple inventory management mobile app made with React Native (Expo) and NativeWind</p>
               </div>
               <div className="flex gap-4">
                 <Link href="https://github.com/shijisan/stock-knowledge" className='btn border-2 border-foreground text-foreground rounded-full bg-white'>Github</Link>
