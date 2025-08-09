@@ -15,6 +15,7 @@
   --color-primary: var(--primary);
   --font-inter: var(--font-inter);
   --font-poppins: var(--font-poppins);
+  --breakpoint-md: 48.03rem;
 }
 
 
