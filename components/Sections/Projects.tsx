@@ -13,7 +13,7 @@ export default function Projects() {
                transition={{ delay: 0.3, duration: 0.6 }}
             >
 
-               <ul className="mx-auto max-w-7xl flex flex-col gap-8">
+               <ul className="mx-auto max-w-7xl flex flex-col gap-8 pt-[10vh]">
 
                   <h2 className="text-xl font-semibold font-poppins md:text-start text-center">Projects 🌐</h2>
 
