@@ -104,7 +104,7 @@ export default function NotesList({
         <ul className="w-full overflow-y-auto overflow-x-hidden h-full">
           {notes.length === 0 ? (
             <li className="text-foreground/50 italic">
-              Click "+" to create a new note
+              Click &quot;+&quot; to create a new note
             </li>
           ) : (
             notes.map((note) => (

@@ -94,13 +94,7 @@ export default function Showcase() {
       const mapped = mapSteamGamesToSlides(res.data.response.games);
       setSteamSlides(mapped);
    }
-
-   const fetchGithubActivity = async () => {
-      const query = `
-
-      `
-   }
-
+   
    useEffect(() => {
 
       fetchTopTracks();
