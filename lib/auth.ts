@@ -33,7 +33,7 @@ export const authOptions: NextAuthConfig = {
         return {
           accessToken: account.access_token!,
           refreshToken: account.refresh_token!,
-          accessTokenExpires: account.expires_at! * 1000, // convert to ms
+          accessTokenExpires: account.expires_at! * 1000, 
         };
       }
 
