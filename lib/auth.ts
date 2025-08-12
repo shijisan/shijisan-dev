@@ -1,4 +1,5 @@
-import NextAuth, { NextAuthConfig } from "next-auth";
+// lib/auth.ts
+import NextAuth from "next-auth";
 import SpotifyProvider from "next-auth/providers/spotify";
 import { refreshAccessToken } from "@/utils/refreshAccessToken";
 import type { JWT } from "next-auth/jwt";
@@ -10,7 +11,7 @@ interface ExtendedToken extends JWT {
   error?: string;
 }
 
-export const authOptions: NextAuthConfig = {
+export const authOptions = {
   providers: [
     SpotifyProvider({
       clientId: process.env.SPOTIFY_CLIENT_ID!,
@@ -27,36 +28,37 @@ export const authOptions: NextAuthConfig = {
     async jwt({ token, account }) {
       const t = token as ExtendedToken;
 
-
-
+     
       if (account) {
         return {
           accessToken: account.access_token!,
           refreshToken: account.refresh_token!,
-          accessTokenExpires: account.expires_at! * 1000, 
+          accessTokenExpires: account.expires_at! * 1000,
         };
       }
 
+     
       if (t.accessTokenExpires && Date.now() < t.accessTokenExpires) {
         return t;
       }
-      
+
+     
       const refreshed = await refreshAccessToken(t);
 
       if (refreshed.error) {
         return {
+          ...t,
           error: "RefreshAccessTokenError",
         };
       }
 
       return {
-        ...token,
+        ...t,
         accessToken: refreshed.accessToken,
-        refreshToken: refreshed.refreshToken,
+        refreshToken: refreshed.refreshToken ?? t.refreshToken,
         accessTokenExpires: refreshed.accessTokenExpires,
-        error: refreshed.error,
-      } satisfies JWT;
-      
+        error: undefined,
+      };
     },
 
     async session({ session, token }) {
@@ -71,6 +73,6 @@ export const authOptions: NextAuthConfig = {
       };
     },
   },
-};
+} satisfies Parameters<typeof NextAuth>[0];
 
 export const { handlers, auth, signIn, signOut } = NextAuth(authOptions);
