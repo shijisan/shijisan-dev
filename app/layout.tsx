@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "devicon/devicon.min.css";
-import SessionWrapper from "@/components/SessionWrapper";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -20,15 +19,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  
+
   return (
     <html lang="en">
       <body
         className={`${inter.variable} font-inter antialiased`}
       >
-        <SessionWrapper>
-          {children}
-        </SessionWrapper>
+        {children}
       </body>
     </html>
   );

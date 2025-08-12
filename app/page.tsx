@@ -8,20 +8,12 @@ import Showcase from "@/components/Sections/Showcase";
 import Experience from "@/components/Sections/Experience";
 import Contacts from "@/components/Sections/Contacts";
 import Projects from "@/components/Sections/Projects";
-import { useSession, signOut } from "next-auth/react";
 
 export type Routes = "About" | "Techs" | "Showcase" | "Experience" | "Projects" | "Contact";
 
 export default function Landing() {
   const [currSect, setCurrSect] = useState<Routes>("About");
-  const { data: session } = useSession();
 
-  useEffect(() => {
-    if (session?.error === "RefreshAccessTokenError") {
-      console.error("Access token refresh failed");
-      signOut();
-    }
-  }, [session]);
 
   useEffect(() => {
     const sections: Routes[] = ["About", "Techs", "Showcase", "Experience", "Projects", "Contact"];
