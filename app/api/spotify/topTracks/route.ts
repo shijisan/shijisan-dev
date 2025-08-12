@@ -97,11 +97,12 @@ export async function GET() {
     }
 
     return NextResponse.json(data);
-  } catch (err: any) {
+  } catch (err: unknown) {
     console.error("Error fetching Spotify top tracks:", err);
+    const errorMessage = err instanceof Error ? err.message : "Unknown error";
     return NextResponse.json({ 
       error: "Failed to fetch top tracks", 
-      details: err.message 
+      details: errorMessage 
     }, { status: 500 });
   }
 }
