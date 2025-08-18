@@ -14,7 +14,6 @@ export type Routes = "About" | "Techs" | "Showcase" | "Experience" | "Projects" 
 export default function Landing() {
   const [currSect, setCurrSect] = useState<Routes>("About");
 
-
   useEffect(() => {
     const sections: Routes[] = ["About", "Techs", "Showcase", "Experience", "Projects", "Contact"];
     const options = {
@@ -53,15 +52,6 @@ export default function Landing() {
       });
     };
   }, []);
-
-
-  useEffect(() => {
-    const el = document.getElementById(currSect);
-    if (el) {
-      const y = el.getBoundingClientRect().top + window.pageYOffset - 100;
-      window.scrollTo({ top: y, behavior: "smooth" });
-    }
-  }, [currSect]);
 
   return (
     <>

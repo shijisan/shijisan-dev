@@ -42,7 +42,6 @@ export type SlideItem = {
    subtitle?: string | string[];
 };
 
-
 function mapSpotifyTracksToSlides(tracks: Track[]): SlideItem[] {
    if (!tracks) return [];
 
@@ -52,7 +51,6 @@ function mapSpotifyTracksToSlides(tracks: Track[]): SlideItem[] {
       subtitle: track.artists.map(artist => artist.name),
    }));
 }
-
 
 function mapSteamGamesToSlides(games: RecentPlayed[]): SlideItem[] {
    return games.map((game, idx) => ({
@@ -65,7 +63,6 @@ function mapSteamGamesToSlides(games: RecentPlayed[]): SlideItem[] {
 }
 
 export default function Showcase() {
-
    const [spotifySlides, setSpotifySlides] = useState<SlideItem[]>([]);
    const [steamSlides, setSteamSlides] = useState<SlideItem[]>([]);
 
@@ -77,10 +74,7 @@ export default function Showcase() {
       subtitle: "Server error"
    }
 
-   const placeholderArray = [
-      placeholderSlide
-   ]
-
+   const placeholderArray = [placeholderSlide]
 
    const fetchTopTracks = async () => {
       const res = await fetch("/api/spotify/topTracks");
@@ -96,60 +90,73 @@ export default function Showcase() {
    }
    
    useEffect(() => {
-
       fetchTopTracks();
       fetchRecentlyPlayed();
    }, []);
 
    return (
-      <>
-         <section className="md:mt-0 mt-12 text-foreground">
+      <section className="md:p-0 p-4 relative mt-16" id="Showcase">
+         <div className="mx-auto max-w-7xl w-full">
             <motion.div
                initial={{ opacity: 0, y: 50 }}
                whileInView={{ opacity: 1, y: 0 }}
                viewport={{ once: true }}
                transition={{ duration: 0.6, ease: 'easeOut', delay: 0.3 }}
+               className="min-h-[70vh] flex flex-col justify-center"
             >
-               <div className="max-w-7xl mx-auto min-h-[70vh] flex flex-col md:p-0 p-4">
-                  <h1 className="md:text-xl text-lg font-semibold font-poppins text-primary mb-4">
+               <div className="mb-8">
+                  <h1 className="md:text-xl text-lg font-semibold font-poppins text-primary">
                      Interactive Skills Showcase 👆
                   </h1>
+               </div>
 
-                  <div className="flex md:flex-row flex-col gap-8">
-                     {/* Spotify */}
-                     <div className="h-fit md:w-1/3 w-full bg-neutral-900 border border-primary/10 rounded-xl shadow-sm pt-3">
-                        <h2 className="text-sm text-foreground/70 mb-2 md:ml-8 md:text-start text-center">
+               <div className="grid md:grid-cols-3 grid-cols-1 gap-6">
+                  {/* Spotify */}
+                  <div className="bg-neutral-900 border border-primary/10 rounded-xl shadow-sm overflow-hidden">
+                     <div className="p-4 pb-2">
+                        <h2 className="text-sm text-foreground/70">
                            REST fetch from <span className="text-primary">Spotify API</span> + OAuth
                         </h2>
+                     </div>
+                     <div className="px-2 pb-4">
                         <Carousel slides={spotifySlides?.length > 0 ? spotifySlides : placeholderArray} />
                      </div>
+                  </div>
 
-                     {/* Steam */}
-                     <div className="h-fit md:w-1/3 w-full bg-neutral-900 border border-primary/10 rounded-xl shadow-sm pt-3">
-                        {steamSlides?.length > 0 ? (
-                           <>
-                              <h2 className="text-sm text-foreground/70 mb-2 md:ml-8 md:text-start text-center">
+                  {/* Steam */}
+                  <div className="bg-neutral-900 border border-primary/10 rounded-xl shadow-sm overflow-hidden">
+                     {steamSlides?.length > 0 ? (
+                        <>
+                           <div className="p-4 pb-2">
+                              <h2 className="text-sm text-foreground/70">
                                  REST axios from <span className="text-primary">Steam API</span>
                               </h2>
+                           </div>
+                           <div className="px-2 pb-4">
                               <Carousel slides={steamSlides} />
-                           </>
-                        ) : (
+                           </div>
+                        </>
+                     ) : (
+                        <div className="p-4 flex items-center justify-center h-32">
                            <p className="text-xs text-foreground/40 italic">No games fetched 😔</p>
-                        )}
-                     </div>
+                        </div>
+                     )}
+                  </div>
 
-                     {/* Notes */}
-                     <div className="h-fit md:w-1/3 w-full bg-neutral-900 border border-primary/10 rounded-xl shadow-sm pt-3">
-                        <h2 className="text-sm text-foreground/70 mb-2 md:ml-8 md:text-start text-center">
+                  {/* Notes */}
+                  <div className="bg-neutral-900 border border-primary/10 rounded-xl shadow-sm overflow-hidden">
+                     <div className="p-4 pb-2">
+                        <h2 className="text-sm text-foreground/70">
                            CRUD <span className="text-primary">Notes</span>
                         </h2>
+                     </div>
+                     <div className="px-2 pb-4">
                         <Notes />
                      </div>
                   </div>
                </div>
             </motion.div>
-         </section>
-
-      </>
+         </div>
+      </section>
    )
 }

@@ -15,7 +15,7 @@ export default function Projects() {
 
                <ul className="mx-auto max-w-7xl flex flex-col gap-8 pt-[10vh]">
 
-                  <h2 className="text-xl font-semibold font-poppins md:text-start text-center">Projects 🌐</h2>
+                  <h2 className="text-xl font-semibold font-poppins md:ps-0 ps-4">Projects 🌐</h2>
 
 
                   <div className="flex md:flex-row flex-col gap-8 md:px-0 px-4 max-w-screen">

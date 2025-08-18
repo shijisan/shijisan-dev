@@ -63,7 +63,7 @@ export default function Notes() {
    }, []);
 
    return (
-      <div className="flex h-full w-full relative bg-neutral-800 rounded-lg border border-primary/10">
+      <div className="flex h-full w-full relative bg-neutral-800 rounded-lg border border-primary/10  md:min-h-auto min-h-64">
          <aside className="w-16 flex flex-col items-center mt-6 border-r-foreground/5 border-r h-full">
             <button
                className="bg-primary text-white rounded-full size-10 flex items-center justify-center text-2xl hover:opacity-90 transition-opacity"
