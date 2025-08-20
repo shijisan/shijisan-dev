@@ -7,7 +7,7 @@ import { FreeMode, Autoplay, Pagination } from 'swiper/modules'
 
 export default function Experience() {
   return (
-    <section className="md:p-0 p-4 relative mt-8" id="Experience">
+    <section className="md:p-0 p-4 relative mt-8 md:scroll-mt-64" id="Experience">
       <div className="mx-auto max-w-7xl w-full">
         <div className="flex flex-col justify-center items-center">
           <div className="w-full mb-8">

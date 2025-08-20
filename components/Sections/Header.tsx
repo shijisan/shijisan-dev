@@ -5,9 +5,12 @@ import { FaChevronDown, FaGlobe, FaRocket } from "react-icons/fa6";
 import { motion } from "motion/react";
 import { Typewriter } from "react-simple-typewriter";
 import { NavProps } from "../Nav";
+import { useRouter } from "next/navigation";
 
 
 export default function Header({ onChangeSect }: NavProps){
+
+  const router = useRouter();
 
    return(
       <>
@@ -57,8 +60,8 @@ export default function Header({ onChangeSect }: NavProps){
 
             </div>
             <div className="mt-8 gap-4 flex">
-              <button onClick={() => onChangeSect("Techs")} className="rounded-full px-4 py-2 bg-primary md:text-sm text-xs btn">Learn More</button>
-              <button onClick={() => onChangeSect("Contact")} className="rounded-full px-4 py-2 border-2 border-primary md:text-sm text-xs text-primary btn">Let&apos;s Talk</button>
+              <button onClick={() => router.push("/#Techs")} className="rounded-full px-4 py-2 bg-primary md:text-sm text-xs btn">Learn More</button>
+              <button onClick={() => router.push("/#Contacts")} className="rounded-full px-4 py-2 border-2 border-primary md:text-sm text-xs text-primary btn">Let&apos;s Talk</button>
             </div>
 
             <FaChevronDown className="absolute bottom-1/12 animate-bounce text-gray-400" />

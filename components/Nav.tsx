@@ -1,6 +1,7 @@
 "use client"
 import { FaCode } from "react-icons/fa6"
 import type { Routes } from "@/app/page"
+import { useRouter } from "next/navigation"
 
 export interface NavProps {
   currSect: Routes
@@ -9,10 +10,9 @@ export interface NavProps {
 
 const sections: Routes[] = ["About", "Techs", "Showcase", "Experience", "Projects", "Contact"]
 
-export default function Nav({ currSect, onChangeSect }: NavProps) {
-  const handleClick = (section: Routes) => {
-    onChangeSect(section)
-  }
+export default function Nav({ currSect }: NavProps) {
+
+  const router = useRouter();
 
   return (
     <nav className="w-full fixed top-0 left-0 z-50 mt-4">
@@ -27,7 +27,7 @@ export default function Nav({ currSect, onChangeSect }: NavProps) {
           {sections.map((section) => (
             <button
               key={section}
-              onClick={() => handleClick(section)}
+              onClick={() => router.push(`/#${section}`)}
               className={`p-2 ${
                 currSect === section ? "bg-neutral-50 text-neutral-950 rounded-full" : "md:block hidden"
               }`}

@@ -62,10 +62,9 @@ export default function Landing() {
 
         <Header currSect={currSect} onChangeSect={setCurrSect} />
         <Techs />
-        <div id="Showcase">
-          <Showcase />
-          <Experience />  
-        </div>
+        <Showcase />
+        <Experience />
+
         <Projects />
         <Contacts />
       </main>
