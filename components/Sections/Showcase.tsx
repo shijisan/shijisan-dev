@@ -138,7 +138,7 @@ export default function Showcase() {
                         </>
                      ) : (
                         <div className="p-4 flex items-center justify-center h-32">
-                           <p className="text-xs text-foreground/40 italic">No games fetched 😔</p>
+                           <p className="text-xs text-foreground/40 italic">No games played recently. I am locked in 💯</p>
                         </div>
                      )}
                   </div>

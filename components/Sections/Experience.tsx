@@ -66,7 +66,18 @@ export default function Experience() {
                 role: "Landing Page Developer",
                 desc: "Built responsive landing pages based on modern design guidelines.",
                 year: "2025"
-              }].map((item, i) => (
+              }, {
+                title: "Matcha Fuel",
+                role: "Shopify E-Commerce Developer",
+                desc: "Implementing custom API, and UI solutions using Replo, and Javascript.",
+                year: "2025"
+              }, {
+                title: "Hipe Japan",
+                role: "Software Engineer",
+                desc: "Engineering software solutions for large-scale enterprise clients.",
+                year: "2025"
+              },
+            ].reverse().map((item, i) => (
                 <SwiperSlide
                   key={i}
                   className="h-52 bg-neutral-800/50 rounded-2xl p-6 shadow-md border border-primary/20 flex flex-col justify-between"

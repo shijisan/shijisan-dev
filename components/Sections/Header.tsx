@@ -21,7 +21,7 @@ export default function Header({ onChangeSect }: NavProps){
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
-            <div className="flex flex-col md:gap-3.5 gap-2 font-poppins font-medium md:text-5xl text-2x       l">
+            <div className="flex flex-col md:gap-3.5 gap-2 font-poppins font-medium md:text-5xl text-2xl">
               <h1 className="text-center tracking-tight inline-flex items-center"><span className="inline-block me-2"><Image className="md:size-14 size-8 rounded-full " src="/profile.webp" height={100} width={100} alt="Christian James Santos Profile Picture" /></span>Christian James Santos</h1>
               <div className="flex gap-4 justify-center items-center">
                 <h1 className=" tracking-tight">Building the future,</h1>
@@ -30,12 +30,12 @@ export default function Header({ onChangeSect }: NavProps){
                 </div>
               </div>
               <div className="flex items-center gap-2 justify-center">
-                <div className="flex md:text-lg text-sm">
-                  <div className="bg-primary rounded-full aspect-square size-full md:p-2 p-1 content-center">
-                    <FaGlobe className="inline-flex md:-mt-2.5 -mt-2" />
+                <div className="flex md:text-lg text-sm gap-2">
+                  <div className="bg-primary rounded-full w-10 md:w-12 aspect-square flex items-center justify-center">
+                    <FaGlobe className="text-white md:text-xl text-base" />
                   </div>
-                  <div className="bg-foreground rounded-full aspect-square size-full md:p-2 p-1 content-center z-10 -ms-2">
-                    <FaRocket className="inline-flex text-neutral-800 md:-mt-2.5 -mt-2" />
+                  <div className="bg-foreground rounded-full w-10 md:w-12 aspect-square flex items-center justify-center -ml-2 z-10">
+                    <FaRocket className="text-neutral-800 md:text-xl text-base" />
                   </div>
                 </div>
                 <h1 className="text-neutral-400 tracking-tight">
@@ -54,7 +54,7 @@ export default function Header({ onChangeSect }: NavProps){
               <p
                 className="text-center text-gray-400"
               >
-                Hey 👋 I&apos;m a Full Stack Web Developer, a passionate self-taught one at that! I&apos;m driven by my goal to build, innovate, and gain knowledge on everything from on-hand skills to the philosophies of things.
+                Hey 👋 I&apos;m a Software Engineer with a broad scope of tech capabilities, and a specialization in Web Apps. I am 19 years old, self-taught and an advocate for open-source, and secure software.
               </p>
               <br />
 
